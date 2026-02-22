@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adaptive UI Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Adaptive UI Dashboard</h1>
+    <button id="resetBtn" class="secondary">Reset Personalization</button>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <h2>Menu (Adapts)</h2>
+      <ul id="menuList" class="menu">
+        <li><button class="menuItem" data-key="home">Home</button></li>
+        <li><button class="menuItem" data-key="reports">Reports</button></li>
+        <li><button class="menuItem" data-key="messages">Messages</button></li>
+        <li><button class="menuItem" data-key="settings">Settings</button></li>
+      </ul>
+
+      <h2>Quick Tip (Adapts)</h2>
+      <p id="tipBox" class="tip">Click menu items to personalize your dashboard.</p>
+    </aside>
+
+    <section class="content">
+      <div class="panel">
+        <h2>Choose a Category (Adapts)</h2>
+        <div class="chips" id="chipRow">
+          <button class="chip" data-cat="AI">AI</button>
+          <button class="chip" data-cat="HCI">HCI</button>
+          <button class="chip" data-cat="UX">UX</button>
+          <button class="chip" data-cat="Data">Data</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Recommended For You (Adapts)</h2>
+        <div id="recoBox" class="cards"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Activity Log</h2>
+        <div id="logBox" class="log"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
